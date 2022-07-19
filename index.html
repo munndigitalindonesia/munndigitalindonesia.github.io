@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Munn Digital Solution</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <link rel="stylesheet" href="/asset/css/transition.css">  
+
+    <link href="/asset/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/asset/js/jquery.mb.YTPlayer.js"></script>
+    <script>
+        $( function() {
+          $( "#bgndVideo" ).YTPlayer();
+        } );
+    </script>
+  </head>
+  <body style="box-sizing: border-box;">
+    <div class="transition transition-2 is-active"></div>
+    <div id="bgndVideo" class="player mb_YTPlayer isMuted" 
+    data-property="{videoURL:'W5v0jgTfWPg',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1, showControls:false}"></div>
+
+    <div class="" id="bg"></div>
+
+    <div class="header">
+      <a href="" class="logo">MUNN.</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a class="nav-menu" id="about" href="#about">About</a></li>
+        <li><a class="nav-menu" id="resume" href="#resmue">Resume</a></li>
+        <li><a class="nav-menu" href="#blog">Blog</a></li>
+        <li><a class="nav-menu" id="contact" href="#contact">Contact</a></li>
+        <li><a class="nav-menu" href="#login" data-bs-toggle="modal" data-bs-target="#exampleModal">Client Login</a></li>
+      </ul>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background:transparent; align-items: center;">
+          <div class="modal-body" id="menu">
+            <div class="login-box p-3 rounded">
+                <div class="fs-4 harmonia text-center">Client Login</div>
+                <form action="" class="mt-3 mb-3 mx-3">
+                  <div class="user-box mb-3">
+                    <input type="email" name="email" required>
+                    <label><i class="bi bi-person-fill"></i> Email</label>
+                  </div>
+                  <div class="user-box mt-3">
+                    <input type="password" name="password" required>
+                    <label><i class="bi bi-lock-fill"></i> Password</label>
+                  </div>
+                    <div class="session mt-2">
+                        <input class="form-check-input shadow-none" type="checkbox" id="flexCheckDefault" value="">
+                        <label for="flexCheckDefault" class="form-check-label palet-abu harmonia" style="font-size:14px;">
+                          Remeber Me
+                        </label>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center mt-4">
+                        <button class="btn rounded px-5 rounded-pill btn-success harmonia"><i class="bi bi-box-arrow-in-right"></i> Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="section" style="z-index: 1;">
+        <div class="text-center">
+            <div class="name mx-3 display-2 text-light text-center fw-bold">
+              Muhammad Bintang
+          </div>
+          <div class="name mx-3 display-2 text-light text-center fw-bold">
+              Alsyahadat
+          </div>
+          <div class="fs-3 text-light text-center mt-3 brasley-medium">
+              I'm a <span class="type"></span>
+          </div>
+        </div>
+    </div>
+    <div class="fixed-bottom mb-4 text-center" id="social">
+      <a class="mx-2" href="https://twitter.com/BintangAl_" target="_blank"><i class="bi bi-twitter fs-5"></i></a>
+      <a class="mx-2" href="#"><i class="bi bi-facebook fs-5"></i></a>
+      <a class="mx-2" href="https://www.linkedin.com/in/bintang-alsyahadat-0aa8981a5/" target="_blank"><i class="bi bi-linkedin fs-5"></i></a>
+      <a class="mx-2" href="https://github.com/BintangAl" target="_blank"><i class="bi bi-github fs-5"></i></a>
+      <a class="mx-2" href="https://www.instagram.com/bintangalsyahadat_/" target="_blank"><i class="bi bi-instagram fs-5"></i></a>
+      <a class="mx-2" href="#"><i class="bi bi-youtube fs-5"></i></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="/asset/js/typed.js"></script>
+    <script src="/asset/js/menu.js"></script>
+    
+    <!-- <script>
+      $(document).ready(function () {
+        $('body').load('/asset/views/home.html');
+      })
+    </script> -->
+  </body>
+</html>
